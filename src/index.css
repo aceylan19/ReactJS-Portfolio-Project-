@@ -47,6 +47,9 @@ body {
 .container { 
   width: var(--container-width-lg);
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1, h2, h3, h4, h5 {
@@ -89,6 +92,7 @@ a:hover {
   display: inline-block;
   color: var(--color-primary);
   padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
   cursor: pointer;
   border: 1px solid var(--color-primary);
   transition: var(--transition);
@@ -106,9 +110,11 @@ a:hover {
 }
 
 img { 
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   object-fit: cover;
+  align-items: center;
 }
 
 /* --MEDIA QUERRIES-- */
@@ -126,7 +132,7 @@ section {
   margin-top: 6rem;
 }
 
-/* --MEDIUM DEVICES (for tablets, etc.)-- */ 
+/* --SMALL DEVICES (for tablets, etc.)-- */ 
 
 @media screen and (max-width: 600px) {
   .container {
@@ -137,3 +143,4 @@ section {
 section > h2 {
   margin-bottom: 2rem;
 }
+
